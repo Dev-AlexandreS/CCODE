@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+:root{
+    --primary-color: #000000;
+    --DarkPurpleCcode: #490074;
+    --PurpleCcode: #7500ba;
+    --PurpleLettersCcode: #a100ff;
+    --Button-gradient: linear-gradient(89.95deg, #000000 0.04%, #A100FF 79.22%);
+}
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'heebo';
+}
+body{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+header .botoes_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header .btn_hI{
+    padding: 0.5rem;
+    border-radius: 15px 0 0 15px;
+}
+header .btn_hO{
+    padding: 0.5rem;
+    border-radius: 0 15px 15px 0;
+}
+header .btn_hO, .btn_hI{
+    border: 1px solid black;
+    font-weight: 660;
+    cursor: pointer;
+}
+
+header .btn_HS{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    background: var(--Button-gradient);
+    padding: 0.7rem 0.9rem;
+}
+
+.checked_hI{
+    z-index: 1;
+    transform: scale(1.2);
+    border: 1px white solid;
+    color: white;
+    background: var(--Button-gradient);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+.checked_hO{
+    z-index: 1;
+    transform: scale(1.2);
+    border: 1px white solid;
+    color: white;
+    font-weight: 530;
+    background: var(--Button-gradient);
+    padding: 0.5rem 0.6rem;
+    border-radius: 15px;
+    box-shadow: 0 0 3px #ffffff, 0 0 8px #ffffff, 0 0 15px #ffffff;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-img{
+    width: 100vw;
+    height: 90vh;
+}
+
+.conteudo_txt{
+    z-index: 1;
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    width: 30%;
+    color: white;
+    font-family: Heebo;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 50.94px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+.desc{
+    font-size: 0.9rem;
+    line-height: 20.94px;
+}
+
+.marktext{
+    color: var(--PurpleLettersCcode);
+}
+
+/* .takeAction{
+    background-color: var(--PurpleLettersCcode);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-weight: 600;
+    border: ;
+    } */
+    
+    .takeAction {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+        text-decoration: none;
+        background: #6e0dad; /* Cor do botão */
+        border-radius: 30px;
+        position: relative;
+        transition: 0.3s;
+        box-shadow: 0 0 5px #6e0dad, 0 0 15px #6e0dad, 0 0 30px #6e0dad;
+}
+
+.takeAction:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 25px #a7a7a7, 0 0 50px #790f70;
+    background: #9400d3; /* Mudança de cor no hover */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.takeAction:active {
+    transform: scale(0.95); /* Efeito ao clicar */
+}
+
+.hero {
+    text-align: start;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    width: 40%;
+    text-align: start;
+}
+
+.hero .highlight {
+    font-weight: 700;
+    color: #fff;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card-b {
+   background-color: white;
+   border-radius: 15px;
+   padding: 1.5rem;
+   cursor: pointer;
+    width: 12rem;
+    height:25rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-b h3 {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card-b img{
+    width: 100%;
+}
+
+.card-b .icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-b:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #a100ff, 0 0 40px #7500ba;
+    z-index: 1;
+}
+
+.card-b.active {
+    background: linear-gradient(145deg, #a100ff, #7500ba);
+    box-shadow: 0 0 20px #fff, 0 0 40px #a100ff;
+}
+
+.card-r {
+    background: linear-gradient(145deg, #7500ba, #490074);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 12rem;
+    height:25rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.card-r h3 {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.card-r img{
+    width: 100%;
+}
+
+.card-r:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
+    z-index: 1;
+}
+
+.card-r.active {
+    background: linear-gradient(145deg, #a100ff, #7500ba);
+    box-shadow: 0 0 20px #fff, 0 0 40px #a100ff;
+}
+
+.objective{
+    margin-top: 3rem;
+    text-align: start;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objective h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.objective p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    width: 40%;
+    text-align: start;
+}
+
+.objective .highlight {
+    font-weight: 700;
+    color: #fff;
+}
+
+.benefits{
+    color: white;
+}
