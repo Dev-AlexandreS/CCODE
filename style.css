@@ -299,5 +299,78 @@ main{
 }
 
 .benefits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
+}
+
+.benefits .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+}
+
+.benefit {
+    background-color: #5c00a0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    display: inline-block;
+    color: white;
+}
+
+.highlight-cta{
+    background-color: #8000ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+
+.cta {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+    background: #6e0dad; /* Cor do botão */
+    border-radius: 30px;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #6e0dad, 0 0 15px #6e0dad, 0 0 30px #6e0dad;
+}
+
+.cta:hover {
+box-shadow: 0 0 10px #ffffff, 0 0 25px #a7a7a7, 0 0 50px #790f70;
+background: #9400d3; /* Mudança de cor no hover */
+transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.cta:active {
+transform: scale(0.95); /* Efeito ao clicar */
+}
+
+.cta:hover {
+    background-color: #d633ff;
+    transition: 0.3s;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: white;
+}
+
+.footer span {
+    color: #8000ff;
 }
