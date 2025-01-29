@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --DarkPurpleCcode: #490074;
+    --PurpleCcode: #7500ba;
+    --PurpleLettersCcode: #a100ff;
+    --Button-gradient: linear-gradient(89.95deg, #000000 0.04%, #A100FF 79.22%);
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+}
+
+header img {
+    max-width: 150px;
+}
+
+header .botoes_header {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    border: 1px solid black;
+    font-weight: 660;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.checked_hI,
+.checked_hO {
+    border: 1px solid white;
+    background: var(--Button-gradient);
+    color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+/* MAIN */
+main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HERO */
+.conteudo-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.conteudo_txt {
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin-top: -150px;
+}
+
+.desc {
+    font-size: 1rem;
+}
+
+.marktext {
+    color: var(--PurpleLettersCcode);
+}
+
+/* BOTÕES */
+.takeAction {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: #6e0dad;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #6e0dad, 0 0 15px #6e0dad;
+}
+
+.takeAction:hover {
+    box-shadow: 0 0 10px #fff, 0 0 25px #a7a7a7, 0 0 50px #790f70;
+    background: #9400d3;
+    transform: scale(1.05);
+}
+
+.takeAction:active {
+    transform: scale(0.95);
+}
+
+/* SERVICES */
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-b,
+.card-r {
+    width: 12rem;
+    height: 25rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-b {
+    background-color: white;
+}
+
+.card-b:hover,
+.card-r:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #a100ff, 0 0 40px #7500ba;
+}
+
+.card-b h3,
+.card-r h3 {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card-b img,
+.card-r img {
+    width: 100%;
+}
+
+/* BENEFÍCIOS */
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.benefit {
+    background-color: #5c00a0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* BOTÃO CTA */
+.cta {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: #6e0dad;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #6e0dad, 0 0 15px #6e0dad;
+}
+
+.cta:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 25px #a7a7a7, 0 0 50px #790f70;
+    background: #9400d3;
+    transform: scale(1.05);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
